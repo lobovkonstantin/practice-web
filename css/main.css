@@ -11,9 +11,9 @@ a {
     text-decoration: none;
 }
 #content{
-    width: 900px;
-    margin-left: 50px;
-    background: #FAFAFA;
+    width: 800px;
+    margin-left: 100px;
+    background: #F9F9F9;
 }
 #navigate ul {
     list-style: none;
