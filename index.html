@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Angular JS</title>
-    <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -13,9 +14,9 @@
         <div id="navigate">
             <ul>
                 <section ng-init="tab = 'Main Page'">
-                <li><a href="index.html" ng-click="tab = 'Main Page'">Main page</a></li>
-                <li><a href ng-click="tab = 'Events list'">Events list</a></li>
-                <li><a href ng-click="tab = 'Login'">Login</a></li>
+                <li><a href="#/" ng-click="tab = 'Main Page'">Main page</a></li>
+                <li><a href="#/events" ng-click="tab = 'Events list'">Events list</a></li>
+                <li><a href="#/login" ng-click="tab = 'Login'">Login</a></li>
                 </section>
             </ul>
         </div>
@@ -29,10 +30,7 @@
                {{item.cntnt}}
             </div>
         </div> 
-        <div id="news">
-           <h id="news-title"> Title!</h>
-            <div id="news-content">content content content content content content content content content content content content content content content content content content</div>
-        </div>  
+        <div ng-view></div>
         <div class="clr"></div>
     </div>
 </div>    
