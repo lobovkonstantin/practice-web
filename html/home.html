@@ -1,4 +1,6 @@
-        <div id="news">
-           <h id="news-title"> Title!</h>
-            <div id="news-content">content content content content content content content content content content content content content content content content content content</div>
-        </div> 
+<div id="news" ng-repeat="item in eventList.news" >
+    <h id="news-title"> {{item.titl}}</h>
+    <div id="news-content" >
+        {{item.cntnt}}
+    </div>
+</div> 

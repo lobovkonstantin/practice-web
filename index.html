@@ -24,15 +24,9 @@
         <h1 class="logo" >{{tab}} </h1>
     </div>
     <div id="content"  ng-controller="EvntController as eventList">
-        <div id="news" ng-repeat="item in eventList.news" >
-           <h id="news-title"> {{item.titl}}</h>
-            <div id="news-content" >
-               {{item.cntnt}}
-            </div>
-        </div> 
         <div ng-view></div>
-        <div class="clr"></div>
     </div>
+    <div id ="footer" class="clr">some important information</div>
 </div>    
 </body>
 </html>

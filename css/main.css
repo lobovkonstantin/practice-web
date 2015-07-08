@@ -3,6 +3,7 @@ body {
 }
 #wrapper {
     width: 1000px;
+    min-height: 550px;
     margin: 35px auto;
     background: #FFF;
 }
@@ -12,8 +13,10 @@ a {
 }
 #content{
     width: 800px;
+    min-height: 400px;
     margin-left: 100px;
     background: #F9F9F9;
+   
 }
 #navigate ul {
     list-style: none;
@@ -40,7 +43,14 @@ a {
 }
 #header {
     height: 95px;
-    border-bottom: solid 3px #C7D4E1;  
+    border-bottom: solid 5px #C7D4E1;  
+}
+#footer{
+    height: 30px;
+    border-top: solid 5px #C7D4E1;  
+    padding-right: 30px;
+    padding-top: 15px;
+    text-align: right
 }
 #news-title{
     border-bottom: solid 1px;
